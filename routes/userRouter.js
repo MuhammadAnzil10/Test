@@ -5,7 +5,8 @@ const userRoute = express.Router();
 const users = [];
 
 userRoute.post("/login",(req,res)=>{
-  users.pu
+  users.push(req.body)
+  res.send(users)
 })
 
 
